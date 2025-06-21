@@ -1,0 +1,52 @@
+
+</main>
+<dialog>
+  <div class="container">
+    <h1>New Timer</h1>
+    <form>
+      <label>
+        Name
+        <input
+          name="timer_name"
+          placeholder="Name"
+        />
+      </label>
+      
+      <label>
+        Mode
+        <select name="mode" onchange="">
+          <option value="up">Count Up
+          <option value="down">Count Down
+        </select>
+      </label>
+
+      <label>
+        Format
+        <select>
+        </select>
+      </label>
+
+      <label>
+        Period
+        <div class="grid">
+          <input type="text" name="period" value="1" disabled />
+          <select name="period_unit" disabled>
+            <option value="h">Hours
+            <option value="d">Days
+            <option value="w">Weeks
+            <option value="m">Months
+            <option value="y">Years
+          </select>
+        </div>
+        <small>Only applicable to Count Down timers.</small>
+      </label>
+
+      <div class="grid">
+        <input type="button" value="Create" class="outline" />
+        <input type="button" value="Cancel" class="outline contrast" />
+      </div>
+    </form>
+  </div>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "time-since",
+  "version": "1.0.0",
+  "description": "Simple 'time since' timer with HTTP endpoints",
+  "main": "app.js",
+  "scripts": {
+    "build": "node_modules/typescript/bin/tsc",
+    "nodemon": "node ./node_modules/nodemon/bin/nodemon.js app.js",
+    "test": "node --test",
+    "build_and_run": "node_modules/typescript/bin/tsc && node app.js",
+    "run": "node build/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/pug": "^2.0.10",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/express-session": "^1.18.2",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "express-session-sqlite": "^2.1.1",
+    "google-auth-library": "^10.1.0",
+    "googleapis": "^150.0.1",
+    "handlebars": "^4.7.8",
+    "node-sqlite": "^0.0.2-security",
+    "pug": "^3.0.3",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html data-theme="dark">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.5/dist/htmx.min.js"></script>
+  <script src="/script.js"></script>
+  <title>time since</title>
+</head>
+<body>
+<main class="container">
+
+<header>
+  <h1> 
+    <a href='/'>
+      <%- include('clock.svg') %>
+      <span>Tickity Tock</span>
+    </a>
+  </h1>
+  <p><em>Timers for days and years...</em></p>
+  <div class="userbox">
+    <% if (user) { %>
+      <%= user.email.split('@')[0] %> (<a href='/auth/logout'>Logout</a>)
+    <% } else { %>
+      <a href='/auth/login'>Log In</a>
+    <% } %>
+  </div>
+</header>
+
+

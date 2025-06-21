@@ -1,0 +1,9 @@
+<%- include('includes/header.ejs') %>
+<% if (!user) { %> <%- include('includes/welcome.ejs'); %><% } else { %>
+<h2>Wecome Back!</h2>
+<h3>Timers <a href='/' onclick="document.querySelector('dialog').showModal(); return false;" title='New Timer'><%- include('includes/add_circle.svg'); %></a></h3>
+<%- include('includes/timers.ejs') %>
+<h3>Groups <a href='/' title='New Timer'><%- include('includes/add_circle.svg'); %></a></h3>
+<%- include('includes/groups.ejs') %>
+<% } %>
+<%- include('includes/footer.ejs') %>
